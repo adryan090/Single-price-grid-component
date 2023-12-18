@@ -153,14 +153,21 @@ footer {
 }
 
 @media (max-width: 44rem) {
+  body {
+    align-items: start;
+    padding-top: 20%;
+    height: auto;
+  }
+
   main {
-    margin-top: 20%;
-    height: 100%;
+    height: min-content;
+    min-height: 100%;
     width: 90%;
     max-width: 40rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
+
   .join,
   .subscription,
   .why-us {
@@ -180,7 +187,7 @@ footer {
   }
 
   footer {
-    bottom: -10rem;
+    bottom: -8rem;
     padding-bottom: 3rem;
   }
 }
